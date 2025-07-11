@@ -33,7 +33,7 @@ const Reviews = () => {
       <h2>What Our Members Say</h2>
       <div className="bento-grid">
         {reviews.map((review, index) => (
-          <div key={index} className={`bento-tile bento-${index + 1}`}>
+          <div key={index} className={`bento-tile bento-${index + 1}`} style={{  border: '2px solid var(--primary)' }}>
             <p>“{review.text}”</p>
             <span>– {review.name}</span>
           </div>

@@ -1087,9 +1087,11 @@ __metadata:
     eslint: "npm:^9.30.1"
     eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-react-refresh: "npm:^0.4.20"
+    framer-motion: "npm:^12.23.3"
     globals: "npm:^16.3.0"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
+    react-icons: "npm:^5.5.0"
     react-router-dom: "npm:^7.6.3"
     vite: "npm:^7.0.4"
   languageName: unknown
@@ -1493,6 +1495,28 @@ __metadata:
     cross-spawn: "npm:^7.0.6"
     signal-exit: "npm:^4.0.1"
   checksum: 10c0/8986e4af2430896e65bc2788d6679067294d6aee9545daefc84923a0a4b399ad9c7a3ea7bd8c0b2b80fdf4a92de4c69df3f628233ff3224260e9c1541a9e9ed3
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^12.23.3":
+  version: 12.23.3
+  resolution: "framer-motion@npm:12.23.3"
+  dependencies:
+    motion-dom: "npm:^12.23.2"
+    motion-utils: "npm:^12.23.2"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/597c00de515426476b8f3eab656736415fe56d41dbfa6f87db5dddf93a47e7fee9d193c3da5c58bd07f6f4f36107915479456db950ce865fb85753e44b66a81c
   languageName: node
   linkType: hard
 
@@ -1941,6 +1965,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"motion-dom@npm:^12.23.2":
+  version: 12.23.2
+  resolution: "motion-dom@npm:12.23.2"
+  dependencies:
+    motion-utils: "npm:^12.23.2"
+  checksum: 10c0/91455a31c558ebd915b45a4157d14553733c432a208c2ab61c54e3d305f32793e559609e2cc2b2d4acaa712637ac067ca62e359d5c6d8b22022bfbff7c023ab8
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.23.2":
+  version: 12.23.2
+  resolution: "motion-utils@npm:12.23.2"
+  checksum: 10c0/bb7479b780371acd43e3a18721deaa9e0324e6f672751310ee1a886e9fd46fe5f71e51510140dadcbd2f81100cd32b9614a2ff40ab2bb8d074d1fb321f6bdd89
+  languageName: node
+  linkType: hard
+
 "ms@npm:^2.1.3":
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
@@ -2152,6 +2192,15 @@ __metadata:
   peerDependencies:
     react: ^19.1.0
   checksum: 10c0/3e26e89bb6c67c9a6aa86cb888c7a7f8258f2e347a6d2a15299c17eb16e04c19194e3452bc3255bd34000a61e45e2cb51e46292392340432f133e5a5d2dfb5fc
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "react-icons@npm:5.5.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/a24309bfc993c19cbcbfc928157e53a137851822779977b9588f6dd41ffc4d11ebc98b447f4039b0d309a858f0a42980f6bfb4477fb19f9f2d1bc2e190fcf79c
   languageName: node
   linkType: hard
 
@@ -2476,6 +2525,13 @@ __metadata:
     fdir: "npm:^6.4.4"
     picomatch: "npm:^4.0.2"
   checksum: 10c0/f789ed6c924287a9b7d3612056ed0cda67306cd2c80c249fd280cf1504742b12583a2089b61f4abbd24605f390809017240e250241f09938054c9b363e51c0a6
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.4.0":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
   languageName: node
   linkType: hard
 
