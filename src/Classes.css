@@ -26,8 +26,8 @@
   border: none;
   font-size: 1rem;
   cursor: pointer;
-clip-path: none;
-border-radius: 0.5rem 0 0 0.5rem;
+  clip-path: none;
+  border-radius: 0.5rem 0 0 0.5rem;
   text-align: left;
 }
 
@@ -36,6 +36,7 @@ border-radius: 0.5rem 0 0 0.5rem;
   color: white;
   font-weight: bold;
   z-index: 2;
+  text-decoration: underline;
 }
 
 .class-details {
@@ -45,19 +46,17 @@ border-radius: 0.5rem 0 0 0.5rem;
   height: 75vh;
   margin-top: 4rem;
   width: 100%;
-
 }
 
 .class-details h3 {
   font-size: 3.75rem;
-    line-height: 1.4 ;
+  line-height: 1.4;
   color: var(--accent);
   margin-bottom: 1rem;
   width: 100%;
   text-align: center;
   display: block;
 }
-
 
 .class-details p {
   font-size: 1.25rem;

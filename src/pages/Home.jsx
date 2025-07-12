@@ -5,20 +5,24 @@ import Classes from "../components/Classes";
 import ReelsCarousel from "../components/ReelsCarousel";
 import Transformation from "../components/Transformation";
 import Trainers from "../components/Trainers";
+import Goal from "../components/Goal";
 import Reviews from "../components/Reviews";
 import FAQ from "../components/FAQ";
+import Location from "../components/Location";
 
 const Home = () => {
   return (
     <>
-       <Hero />
-     <WhyUs />
+      <Hero />
+      <WhyUs />
       <Classes />
       <ReelsCarousel />
       <Transformation />
       <Trainers />
+      <Goal />
       <Reviews />
-      <FAQ /> 
+      <FAQ />
+      <Location />
     </>
   );
 };
