@@ -88,14 +88,84 @@
   line-height: 1.5;
 }
 
+@media (max-width: 1024px) {
+  .card-wrapper {
+    width: 20rem;
+    height: 28rem;
+  }
+
+  .trainer-card .front img {
+    height: 16rem;
+  }
+
+  .trainer-card .front h3 {
+    font-size: 1rem;
+  }
+
+  .trainer-card .back {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .trainers-section {
+    padding: 3rem 1rem;
+  }
+
+  .trainers-section h2 {
+    font-size: 2rem;
+  }
+
   .trainer-grid {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .card-wrapper {
-    width: 90%;
-    height: 380px;
+    width: 95%;
+    max-width: 22rem;
+    height: 24rem;
+  }
+
+  .trainer-card .front img {
+    height: 14rem;
+  }
+
+  .trainer-card .front h3 {
+    font-size: 1rem;
+  }
+
+  .trainer-card .front p {
+    font-size: 0.85rem;
+  }
+
+  .trainer-card .back {
+    font-size: 0.9rem;
+    padding: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .card-wrapper {
+    height: 22rem;
+  }
+
+  .trainer-card .front img {
+    height: 12rem;
+  }
+
+  .trainer-card .front h3 {
+    font-size: 0.95rem;
+  }
+
+  .trainer-card .front p {
+    font-size: 0.8rem;
+  }
+
+  .trainer-card .back {
+    font-size: 0.85rem;
+  }
+}
+

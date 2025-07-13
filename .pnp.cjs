@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["framer-motion", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:12.23.3"],\
           ["globals", "npm:16.3.0"],\
           ["react", "npm:19.1.0"],\
+          ["react-compare-image", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:3.5.6"],\
           ["react-dom", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:19.1.0"],\
           ["react-icons", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:5.5.0"],\
           ["react-router-dom", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:7.6.3"],\
@@ -1409,6 +1410,7 @@ const RAW_RUNTIME_STATE =
           ["framer-motion", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:12.23.3"],\
           ["globals", "npm:16.3.0"],\
           ["react", "npm:19.1.0"],\
+          ["react-compare-image", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:3.5.6"],\
           ["react-dom", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:19.1.0"],\
           ["react-icons", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:5.5.0"],\
           ["react-router-dom", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:7.6.3"],\
@@ -2637,6 +2639,33 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-compare-image", [\
+      ["npm:3.5.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/react-compare-image-npm-3.5.6-f4da006176-10c0.zip/node_modules/react-compare-image/",\
+        "packageDependencies": [\
+          ["react-compare-image", "npm:3.5.6"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:3.5.6", {\
+        "packageLocation": "./.yarn/__virtual__/react-compare-image-virtual-390cd11176/4/.yarn/berry/cache/react-compare-image-npm-3.5.6-f4da006176-10c0.zip/node_modules/react-compare-image/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:19.1.8"],\
+          ["@types/react-dom", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:19.1.6"],\
+          ["react", "npm:19.1.0"],\
+          ["react-compare-image", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:3.5.6"],\
+          ["react-dom", "virtual:e25a88b55f8442d9edb9a524cc3ae276a6a9c6ac47203a33f4ef5c6c28e61f1817c376af5f0b75ab2bd9650167e805a1094f5845f9c07dd365a649e640e3aa5a#npm:19.1.0"],\
+          ["tiny-invariant", "npm:1.3.3"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-dom", [\
       ["npm:19.1.0", {\
         "packageLocation": "../../../.yarn/berry/cache/react-dom-npm-19.1.0-773f826e46-10c0.zip/node_modules/react-dom/",\
@@ -2996,6 +3025,15 @@ const RAW_RUNTIME_STATE =
           ["mkdirp", "npm:3.0.1"],\
           ["tar", "npm:7.4.3"],\
           ["yallist", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tiny-invariant", [\
+      ["npm:1.3.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/tiny-invariant-npm-1.3.3-e622f1447c-10c0.zip/node_modules/tiny-invariant/",\
+        "packageDependencies": [\
+          ["tiny-invariant", "npm:1.3.3"]\
         ],\
         "linkType": "HARD"\
       }]\

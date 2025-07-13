@@ -1,7 +1,7 @@
 :root {
-  --primary: #FF5722;       /* Fiery Orange */
-  --dark: #1C1C1C;           /* Deep Charcoal */
-  --accent: #F9E0DC;         /* Blush Rose */
+  --primary: #ff5722; /* Fiery Orange */
+  --dark: #1c1c1c; /* Deep Charcoal */
+  --accent: #f9e0dc; /* Blush Rose */
   --text: #333;
   --radius: 1rem;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: var(--text);
   line-height: 1.6;
@@ -71,7 +71,7 @@ section {
   position: relative;
 }
 
-.navbar.scrolled a{
+.navbar.scrolled a {
   color: var(--dark);
 }
 
@@ -91,8 +91,23 @@ section {
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: var(--primary);
+  transition: all 0.3s ease;
+}
+
 .hero {
-  background: url('./assets/images/hero.jpg') right center / cover no-repeat;
+  background: url("./assets/images/hero.jpg") right center / cover no-repeat;
   animation: fadeIn 1s ease;
   color: white;
   position: relative;
@@ -128,6 +143,37 @@ section {
   color: var(--accent);
 }
 
+.cta-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 1rem 2rem;
+  top: 2rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  animation: blink 1.5s infinite;
+  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
 section h2 {
   font-size: 2rem;
   color: var(--primary);
@@ -148,7 +194,6 @@ section h2 {
   background-color: var(--accent);
   text-align: center;
   border-radius: var(--radius);
-
 }
 
 .reviews-bento h2 {
@@ -159,10 +204,9 @@ section h2 {
 
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px,2fr));
   grid-auto-rows: 200px;
   gap: 1rem;
-  
 }
 
 .bento-tile {
@@ -175,6 +219,9 @@ section h2 {
   justify-content: space-between;
   transition: transform 0.3s ease;
   text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .bento-tile:hover {
@@ -211,7 +258,6 @@ section h2 {
   padding: 2rem;
   text-align: center;
   border-top: 4px solid var(--primary);
-  margin-top: 4rem;
 }
 
 /* Reels Section */
@@ -324,20 +370,61 @@ section h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
-    background: var(--dark);
-    padding: 1rem;
-    border-radius: var(--radius);
+  .hamburger {
+    display: flex;
+    z-index: 1111;
   }
+.navbar{
+    margin: 0;
+    
+}
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    /* right: 1rem; */
+    background: var(--accent);
+    flex-direction: column;
+    /* align-items: flex-start; */
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    /* border-radius: var(--radius); */
+    box-shadow: var(--shadow);
+    display: none;
+    margin-top: -5rem;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar a {
+    color: var(--dark);
+    font-weight: 600;
+  }
+
+  .navbar a::after {
+    background: var(--primary);
+  }
+
 
   .hero h1 {
     font-size: 2rem;
   }
 
   .bento-grid {
-    grid-template-columns: 1fr !important;
+    display: block;
+    /* margin-bottom: 1rem; */
+    /* grid-template-columns: none; */
+  }
+.bento-tile {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .bento-tile h3, 
+  .bento-tile p {
+    font-size: 1rem;
   }
 
   section {

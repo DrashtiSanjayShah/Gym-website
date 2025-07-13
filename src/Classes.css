@@ -1,3 +1,12 @@
+:root {
+  --primary: #FF5722;
+  --accent: #FBE9E7;
+  --text: #333;
+  --bg: #fff;
+  --radius: 1rem;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 .tab-area {
   display: flex;
   flex-direction: row-reverse;
@@ -85,4 +94,52 @@
   font-size: 2rem;
   margin-top: 0.1rem;
   color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .tab-area {
+    flex-direction: column;
+    border-radius: var(--radius);
+    height: 32rem;
+  }
+
+  .tab-bar {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .chrome-tab {
+    /* min-width: 160px; */
+    border-radius: var(--radius);
+    text-align: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .class-details {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    height: auto;
+  }
+
+  .class-details h3 {
+    font-size: 2rem;
+  }
+
+  .class-details p {
+    font-size: 1rem;
+  }
+
+  .butler-points li {
+    font-size: 0.95rem;
+    align-items: center;
+  }
+
+  .point-icon {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
 }

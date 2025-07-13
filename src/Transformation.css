@@ -1,0 +1,151 @@
+/* Transformation.css */
+:root {
+  --primary: #FF5722;
+  --accent: #FBE9E7;
+  --text: #333;
+  --bg: #fff;
+  --radius: 1rem;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.transformation-section {
+  padding: 4rem 1.5rem;
+  background-color: #fdf2ef;
+  text-align: center;
+}
+
+.transformation-section h2 {
+  font-size: 2.5rem;
+  color: #FF5722;
+  margin-bottom: 1rem;
+}
+
+.transformation-section p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.slider-wrapper {
+  width: 56rem;
+  height: 32rem;
+  margin: 0 auto 2.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider-wrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.caption-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.caption {
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+}
+
+.transformation-cta {
+  background-color: #FF5722;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  animation: pulse 1.8s infinite;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.transformation-cta:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 87, 34, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
+  }
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .transformation-section h2 {
+    font-size: 2rem;
+  }
+
+  .transformation-section p {
+    font-size: 1rem;
+  }
+
+  .caption {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+.slider-wrapper{
+    height: 24rem;
+}
+
+  .transformation-cta {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .caption-wrapper {
+    top: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .caption {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .transformation-cta {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.25rem;
+  }
+}
