@@ -107,7 +107,7 @@ section {
 }
 
 .hero {
-  background: url("./assets/images/hero.jpg") right center / cover no-repeat;
+  background: url("./assets/images/hero.png") right center / cover no-repeat;
   animation: fadeIn 1s ease;
   color: white;
   position: relative;

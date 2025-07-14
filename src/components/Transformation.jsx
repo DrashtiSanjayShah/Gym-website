@@ -1,8 +1,8 @@
 // Transformation.js
 import React from "react";
 import ReactCompareImage from "react-compare-image";
-import beforeImg from "../assets/images/hero.jpg";
-import afterImg from "../assets/images/bg.png";
+import beforeImg from "../assets/images/before.png";
+import afterImg from "../assets/images/after.png";
 import "../Transformation.css";
 // export type AppTouchEvent = TouchEvent;
 
@@ -22,6 +22,7 @@ const Transformation = () => {
     leftImage={beforeImg}
     rightImage={afterImg}
     sliderLineColor="#FF5722"
+    
   />
 </div>
 
